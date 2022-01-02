@@ -1,3 +1,5 @@
-<div *ngIf="movie">
-    <p>{{ movie.poster_path}}</p>
+<div *ngIf="movie" class="movie">
+    <a routerLink="/movies/{{ movie.id }}">
+        <img src='{{ "https://image.tmdb.org/t/p/w185" + movie.poster_path}}' />
+    </a>
 </div>
